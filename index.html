@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Animated mesh gradient from stripe.com" />
+  <script src="https://unpkg.com/react@latest/umd/react.development.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@latest/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@material-ui/core@latest/umd/material-ui.development.js"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/babel-standalone@latest/babel.min.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Luna Web Solutions</title>
+</head>
+
+<body>
+
+  <main>
+    <div class="app-bar">
+
+      <ul class="nav-links">
+        <li class="nav-link"><i class="fas fa-user"></i><a href="#about">About</a> </li>
+        <li class="nav-link"><i class="fas fa-laptop fa-sm"></i><a href="#websites"> Websites</a></li>
+        <li class="nav-link"><i class="fas fa-desktop fa-sm"></i> Templates</li>
+        <li class="nav-link"><i class="fas fa-folder fa-sm"></i> Projects</li>
+        <li class="nav-link"><i class="fas fa-pen fa-sm"></i> Bookings</li>
+        <li class="nav-link"><i class="fas fa-envelope fa-sm"></i> Contact</li>
+        <li class="nav-link"><i class="fas fa-globe"></i> Lang (EN)</li>
+      </ul>
+
+    </div>
+
+
+    <section id="hero" class="hero">
+      <canvas style="--gradient-color-1: #a960ee;
+    --gradient-color-2: #ff333d;
+    --gradient-color-3: #90e0ff;
+    --gradient-color-4: #ffcb57;" id="gradient-canvas" data-transition-in="" width="1366" height="600"></canvas>
+      <h1 class="hero-title">Oscar Armando Luna</h1>
+      <h3 class="hero-subtitle">Web Development Solutions</h3>
+      <a href="#about">
+        <button class="hero-cta">
+          <i class="fas fa-caret-down"></i>
+          Get Started
+        </button>
+      </a>
+    </section>
+
+
+    <section id="about" class="about">
+      <div class="about-header">
+        <h3>I create and deploy web applications</h3>
+      </div>
+
+      <div class="about-card-container">
+
+        <div class="about-card">
+          <div class="about-card-header">
+            <i class="fas fa-file-code fa-3x"></i>
+            <h3>Stunning UI</h3>
+          </div>
+          <div class="about-card-body">
+            <h4>Get a stunning and responsive website that will attract clients, from any screen size.</h4>
+            <button class="about-card-cta">
+              Get Started
+            </button>
+          </div>
+        </div>
+
+        <div class="about-card">
+          <div class="about-card-header">
+            <i class="fas fa-tv fa-3x"></i>
+            <h3>Templates Available</h3>
+          </div>
+          <div class="about-card-body">
+            <h4>Fully customizable pre-built templates are also available.</h4>
+            <button class="about-card-cta">
+              Get Started
+            </button>
+          </div>
+        </div>
+
+        <div class="about-card">
+          <div class="about-card-header">
+            <i class="fas fa-tty fa-3x"></i>
+            <h3>Web Design Consultation</h3>
+          </div>
+          <div class="about-card-body">
+            <h4>I will work closely with you throughout the development process, starting with a free consultation.</h4>
+            <button class="about-card-cta">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="websites" class="websites">
+      <div class="websites-image-container">
+        <img src="image_macbook.webp" class="desktop-img" id="macbook-air" alt="sample desktop mockup" />
+      </div>
+      <div class="websites-header">
+        <h1>Design.<br />Develop.<br />Deploy.</h1>
+      </div>
+      <div class="websites-body">
+        <p>I ensure the client receives the most optimal solution for their web needs, from the first consultation
+          through deployment.</p>
+        <div class="websites-cta-container">
+          <button class="websites-body-cta">
+            View my Projects
+          </button>
+          <button class="websites-body-cta">
+            Buy a Template
+          </button>
+          <button class="websites-body-cta">
+            Get a Consultation
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  <script type="text/javascript" src="script.js">
+  </script>
+</body>
+
+</html>
