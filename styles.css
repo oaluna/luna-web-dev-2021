@@ -100,7 +100,7 @@ top: 0vh;
   color: #0a2540;
   transition: 0.15s ease-in;
 }
-.nav-link a {
+a {
   text-decoration: none;
 }
 .nav-link:hover {
@@ -261,6 +261,218 @@ section.websites {
     left: 50vw;
     z-index: -1;
   }
+
+
+  section.templates {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .templates-header h1 {
+    position: absolute;
+    top: 0vh;
+    left: 30vw;
+    font-size: 56px;
+    font-weight: 700;
+    width: 100vw;
+
+  }
+  .templates-wrapper {
+    position: absolute;
+    top: 0vh;
+  }
+  .templates-row {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    top: 20vh;
+    left: 5vw;
+width: 100vw;
+height: 40vh;
+  }
+  .templates-col {
+    display: flex;
+    flex-direction: column;
+    top: 0vh;
+    left: 0vw;
+    width: 40vw;
+position: relative;
+  }
+  .template-wrapper-text {
+    position: relative;
+    left: 0vw;
+    text-align: left;
+    width: 40vw;
+    height: 40vh;
+  }
+  h3.template-wrapper-title {
+    position: relative;
+    top: 0vh;
+    left: 0vw;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1;
+  }
+  h4.template-wrapper-subtitle {
+    position: relative;
+    top: 0vh;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+  }
+  .template-thumbnail {
+    position: relative;
+    top: 0vh;
+    left: 0vw;
+    border: none;
+    transform: scale(0.3, 0.3);
+  }
+  .template-thumbnail:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        transition: all 0.2s ease-out;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+        transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.5s box-shadow,
+          0.5s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  }
+.template-cta {
+  left: 2.5vw;
+    background: #0a2540;
+    border: none;
+    border-radius: 45px;
+    font-size: 18px;
+    color: #fff;
+    mix-blend-mode: color-burn;
+    font-weight: 100;
+    width: 15vw;
+    height: 5vh;
+    transition: 0.15s ease-in;
+  }
+  .template-cta:hover {
+    background-color: #7038ff;
+    box-shadow: 2.5px 2.5px 4px #333;
+  }
+
+  section.projects {
+    display: flex;
+    background-color: #0a2540;
+    flex-direction: column;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .projects-header {
+display: flex;
+flex-direction: column;
+    position: relative;
+    top: 15vh;
+    width: 100vw;
+    height: 20vh;
+   text-align: left;
+  }
+  .projects-header >
+  h1.projects-title {
+    top: -10vh;
+    position: absolute;
+    font-size: 48px;
+    color: #fff;
+    line-height: 1;
+    z-index: 1;
+    mix-blend-mode: normal;
+    width: 50vw;
+    left: 40vw;
+  }
+  h2.projects-subtitle {
+    position: absolute;
+    font-size: 36px;
+    color: #fff;
+    line-height: 1;
+    width: 50vw;
+    left: 40vw;
+    mix-blend-mode: normal;
+    z-index: 1;
+    font-weight: 400;
+
+  }
+  .projects-card-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: row-wrap;
+    width: 60vw;
+    height: 45vh;
+    justify-content: space-evenly;
+    margin: 15px;
+    padding: 5px;
+    left: 0vw;
+  }
+.github-repo-card {
+  border-radius: 3px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background: #d1d5da;
+  width: 320px;
+  padding: 10px 15px;
+  font-size: 12px;
+  margin: 15px;
+  position: relative;
+  left: 35vw;
+  top: 15vh;
+  transition: 0.2s ease-in;
+}
+.github-repo-card:hover {
+box-shadow: 1px 1px 6px #fff;
+}
+  .project-card-title {
+    margin: 0;
+  }
+   .project-card-title a {
+      color: #0366d6;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+  .project-card-description {
+    margin: 8px 0px 16px;
+    align-items: center;
+  }
+
+  .project-card-footer > .repo-language-color {
+      position: relative;
+      top: 1px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: yellow;
+      float: left;
+      margin-right: 2px;
+    }
+    .project-card-footer > .repo-language {
+      top: -1px;
+      position: relative;
+      bottom: 0vh;
+    }
+    .project-card-footer > .repo-icons {
+      display: flex;
+      flex-direction: row;
+padding: 10px;
+      justify-content: space-evenly;
+      text-align: left;
+      position: absolute;
+      bottom: 0vh;
+      left: 0vw;
+width: 100%;
+transition: 0.2s ease-in;
+    }
+    .repo-icons > .fa-lg:hover {
+      color: #80e9ff;
+      text-shadow: .5px .5px 2px #333;
+    }
+
 
 
 @media screen and (max-width: 376px) {
