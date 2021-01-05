@@ -12,6 +12,7 @@
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/babel-standalone@latest/babel.min.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://npmcdn.com/github-card@1.2.0/dist/widget.js"></script>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -28,13 +29,22 @@
     <div class="app-bar">
 
       <ul class="nav-links">
-        <li class="nav-link"><i class="fas fa-user"></i><a href="#about"> About</a> </li>
-        <li class="nav-link"><i class="fas fa-laptop fa-sm"></i><a href="#websites"> Websites</a></li>
-        <li class="nav-link"><i class="fas fa-desktop fa-sm"></i> Templates</li>
-        <li class="nav-link"><i class="fas fa-folder fa-sm"></i> Projects</li>
+        <li class="nav-link">
+          <i class="fas fa-user"></i>
+          <a href="#about"> About</a>
+        </li>
+        <li class="nav-link">
+          <i class="fas fa-laptop fa-sm"></i>
+          <a href="#websites"> Websites</a>
+        </li>
+        <li class="nav-link">
+          <i class="fas fa-desktop fa-sm"></i>
+          <a href="#templates"> Templates</a>
+        </li>
+        <li class="nav-link"><i class="fas fa-folder fa-sm"></i><a href="#projects"> Projects</a></li>
         <li class="nav-link"><i class="fas fa-pen fa-sm"></i> Bookings</li>
         <li class="nav-link"><i class="fas fa-envelope fa-sm"></i> Contact</li>
-        <li class="nav-link"><i class="fas fa-globe"></i> Lang (EN)</li>
+        <li class="nav-link"><i class="fas fa-globe"></i> Lang (EN) <i class="fas fa-caret-down"></i></li>
       </ul>
 
     </div>
@@ -131,13 +141,18 @@
 
 
     <section id="templates" class="templates">
+
       <div class="templates-container">
         <div class="templates-wrapper">
+
           <div class="templates-header">
             <h1>Free UI Templates</h1>
           </div>
+
           <div class="templates-row">
+
             <div class="templates-col">
+
               <div class="template-wrapper-text">
                 <h3 class="template-wrapper-title">Landing Page Template</h3>
                 <h4 class="template-wrapper-subtitle">Fully customizable to your needs.</h4>
@@ -153,7 +168,9 @@
                 </a>
               </div>
             </div>
+
             <div class="templates-col">
+
               <div class="template-thumbnail">
                 <a href="https://lws-landing-demo.vercel.app" target="_blank" aria-label="demo link"
                   rel="noopener noreferrer">
@@ -164,7 +181,9 @@
           </div>
 
           <div class="templates-row">
+
             <div class="templates-col">
+
               <div class="template-wrapper-text">
                 <h3 class="template-wrapper-title">Shopping Site Template</h3>
                 <h4 class="template-wrapper-subtitle">Start your business online.</h4>
@@ -180,6 +199,7 @@
                 </a>
               </div>
             </div>
+
             <div class="templates-col">
               <div class="template-thumbnail">
                 <a href="https://lws-shopping-demo.herokuapp.com" target="_blank" aria-label="demo link"
@@ -188,10 +208,13 @@
                 </a>
               </div>
             </div>
+
           </div>
+
         </div>
       </div>
     </section>
+
 
     <section id="projects" class="projects">
       <div class="projects-header">
@@ -202,7 +225,7 @@
       </div>
 
       <lottie-player src="https://assets5.lottiefiles.com/datafiles/wW9k6ALg5Mn9cIj/data.json" background="#0a2540"
-        speed="0.75" style="width: 600px; height: 600px;position: absolute;top: 0vh;left: 0vw;z-index: 0;" loop
+        speed="0.75" style="width: 1000px; height: 1000px;position: absolute;top: -40vh;left: -10vw;z-index: 0;" loop
         autoplay>
       </lottie-player>
 
@@ -243,12 +266,14 @@
           </p>
         </div>
 
-        <div class="github-repo-card" data-repo="oaluna/lunawebsolutions-shopping-app" style="width:320px;" id="repo-card">
+        <div class="github-repo-card" data-repo="oaluna/lunawebsolutions-shopping-app" style="width:320px;"
+          id="repo-card">
           <span class="project-card-title">
-            <a href="https://github.com/oaluna/lunawebsolutions-shoppingapp" target="_blank">oaluna/lunawebsolutions-shoppingapp</a>
+            <a href="https://github.com/oaluna/lunawebsolutions-shoppingapp"
+              target="_blank">oaluna/lunawebsolutions-shoppingapp</a>
           </span>
-          <p class="project-card-description">Demo shopping PWA built using React, Apollo GraphQL, Redux, and deployed to Heroku. <a
-              href="https://lws-shopping-demo.herokuapp.com">lws-shopping-demo.herokuapp.com</a></p>
+          <p class="project-card-description">Demo shopping PWA built using React, Apollo GraphQL, Redux, and deployed
+            to Heroku. <a href="https://lws-shopping-demo.herokuapp.com">lws-shopping-demo.herokuapp.com</a></p>
           <p class="project-card-footer"><span class="repo-language-color"></span><span
               class="repo-language">JavaScript&nbsp;&nbsp;&nbsp;&nbsp;MIT License&nbsp;&nbsp;&nbsp;&nbsp;Last Updated
               17 days ago</span><br />
@@ -263,13 +288,20 @@
 
 
       </div>
+      <div class="projects-cta-container">
+        See my other repositories here:
+        <button class="projects-cta">
+          <i class="fab fa-github-alt"></i> oaluna
+        </button>
+      </div>
       </div>
       </div>
       </div>
 
-
-    </section>
-
+      <section class="bookings">
+<div class=""
+      </section>
+      <!-- <div class="github-widget" data-username="oaluna"></div> -->
   </main>
   <script type="text/javascript" src="script.js">
   </script>

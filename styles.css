@@ -15,9 +15,9 @@ body: {
 }
 #gradient-canvas {
   overflow-y: visible;
-  scroll-behavior: none;
-  width: 100%;
-  height: 100%;
+  scroll-behavior: no-scroll;
+  width: 100vw;
+  height: 100vh;
   --gradient-color-1: #a960ee;
   --gradient-color-2: #ff333d;
   --gradient-color-3: #7038ff;
@@ -40,14 +40,14 @@ h3 {
   font-weight: 700;
 }
 h1.hero-title {
-  font-size: 48px;
+  font-size: 64px;
   font-family: La storia -demo-;
   letter-spacing: -0.8px;
 }
 h3 {
-  font-size: 56px;
+  font-size: 64px;
   top: 45vh;
-  font-weight: 500;
+  font-weight: 600;
 }
 .logo {
   position: relative;
@@ -102,10 +102,12 @@ top: 0vh;
 }
 a {
   text-decoration: none;
+  color: #0a2540;
+  mix-blend-mode: color-burn;
 }
-.nav-link:hover {
-  color: #80e9ff;
-  text-shadow: .5px .5px 2px #333;
+a:hover, .nav-link:hover {
+color: #7038ff;
+  text-shadow: .5px .5px 2px #aaa;
 }
 
 section.about {
@@ -364,6 +366,7 @@ position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    top: 5vh;
   }
   .projects-header {
 display: flex;
@@ -397,6 +400,10 @@ flex-direction: column;
     z-index: 1;
     font-weight: 400;
 
+  }
+  .lottie-player {
+    width: 100vw;
+    height: 100vh;
   }
   .projects-card-container {
     position: relative;
@@ -472,7 +479,33 @@ transition: 0.2s ease-in;
       color: #80e9ff;
       text-shadow: .5px .5px 2px #333;
     }
-
+    .projects-cta-container {
+      position: absolute;
+      color: #fff;
+      top: 90vh;
+      left: 55vw;
+      font-size: 18px;
+    }
+    .projects-cta {
+      background: #0a2540;
+      border: 2px solid #80e9ff;
+      color: #fff;
+font-size: 18px;
+width: 10vw;
+height: 36px;
+border-radius: 30px;
+margin-left: 15px;
+transition: 0.2s ease-in;
+    }
+    .projects-cta:hover {
+      background: #80e9ff;
+      box-shadow: 1px 1px 5px #999;
+    }
+.github-widget {
+  top: 0vh;
+  position: relative;
+  background: #d1d5da;
+}
 
 
 @media screen and (max-width: 376px) {
@@ -545,11 +578,11 @@ margin: 0px;
     justify-content: center;
     font-size: 20px;
   }
-  .about-card-body h4{
+  .about-card-body > h4{
     width: 90vw;
     top: 5vh;
     left: 3vw;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
   }
   .about-card-body > .about-card-cta {
@@ -583,3 +616,100 @@ margin: 0px;
     left: 2.5vw;
     margin-bottom: 1vh;
   }
+  section.templates {
+    display: flex;
+    flex-direction: row;
+    top: 25vh;
+    height: 105vh;
+  }
+.templates-header h1 {
+  font-size: 36px;
+  top: 15vh;
+  left: 4vw;
+}
+h3.template-wrapper-title {
+  font-size: 30px;
+  top: 5vh;
+}
+h4.template-wrapper-subtitle {
+  font-size: 20px;
+  top: 3vh;
+}
+p.template-wrapper-info {
+  display: none;
+}
+.template-cta {
+  width: 40vw;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  margin: 15px;
+  justify-content: space-evenly;
+  align-items: center;
+  left: 20vw;
+  top: 3vh;
+}
+.template-thumbnail {
+  transform: scale(0.2, 0.2);
+}
+section.projects {
+  top: 35vh;
+  height: 150vh;
+  position: relative;
+  padding: 0;
+
+}
+.projects-header {
+  width: 100vw;
+  left: 0vw;
+  position: absolute;
+}
+lottie-player {
+  margin-top: 15vh;
+  margin-left: -15vw;
+}
+.projects-header > h1.projects-title {
+  position: relative;
+height: 3vh;
+  left: 0vw;
+  top: 0vh;
+}
+
+
+.projects-header > h2.projects-subtitle {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  top: 10vh;
+  left: 0vw;
+  font-size: 24px;
+}
+.lottie-player {
+  width: 100vw;
+  height: 100vh;
+}
+.projects-card-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+ left: -42vw;
+  top: 60vh;
+}
+.github-repo-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.projects-cta-container {
+  top: 135vh;
+  left: 10vw;
+  display: flex;
+  flex-direction: column;
+}
+.projects-cta {
+  position: absolute;
+  top: 5vh;
+  left: 10vw;
+  width: 45vw;
+}
+}
