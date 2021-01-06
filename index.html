@@ -227,7 +227,7 @@
       </div>
 
       <lottie-player src="https://assets5.lottiefiles.com/datafiles/wW9k6ALg5Mn9cIj/data.json" background="#0a2540"
-        speed="0.75" style="width: 2000px; height: 2000px;position: absolute;top: -60vh;left: -40vw;z-index: 0;" loop
+        speed="0.75" style="width: 1500px; height: 1500px;position: absolute;top: -70vh;left: -40vw;z-index: 0;" loop
         autoplay>
       </lottie-player>
 
@@ -302,72 +302,114 @@
     </section>
 
 
-      <section id="pricing" class="pricing">
-        <div class="pricing-header">
-          <div class="pricing-title">
-            <h3>Pricing</h3>
+    <section id="pricing" class="pricing">
+      <div class="pricing-header">
+        <div class="pricing-title">
+          <h3>Pricing</h3>
+        </div>
+        <div class="pricing-subtitle">
+          <h4>Pricing tiers based on your web development needs.</h4>
+        </div>
+      </div>
+
+      <div class="pricing-card-container">
+
+        <div class="pricing-card">
+          <div class="pricing-card-title">
+            <h3>Personal Site</h3>
           </div>
-          <div class="pricing-subtitle">
-            <h4>Pricing tiers based on your web development needs.</h4>
+          <div class="pricing-card-price">
+            <h4>$0</h4>
+          </div>
+          <div class="pricing-card-features">
+            <ul>
+              <li>Feature 1</li>
+              <li>Feature 2</li>
+              <li>Feature 3</li>
+            </ul>
+          </div>
+          <div class="pricing-card-cta-container">
+            <button class="pricing-card-cta">
+              <p>Get Started</p>
+            </button>
           </div>
         </div>
 
-        <div class="pricing-card-container">
-
-          <div class="pricing-card">
-            <div class="pricing-card-title">
-              <h3>Personal Site</h3>
-            </div>
-            <div class="pricing-card-price">
-              <h4>$0</h4>
-            </div>
-            <div class="pricing-card-features">
-              <ul>
-                <li>Feature 1</li>
-                <li>Feature 2</li>
-                <li>Feature 3</li>
-              </ul>
-            </div>
+        <div class="pricing-card center">
+          <div class="pricing-card-title">
+            <h3>Business Site</h3>
           </div>
-
-          <div class="pricing-card center">
-            <div class="pricing-card-title">
-              <h3>Business Site</h3>
-            </div>
-            <div class="pricing-card-price">
-              <h4>$250</h4>
-            </div>
-            <div class="pricing-card-features">
-              <ul>
-                <li>Feature 1</li>
-                <li>Feature 2</li>
-                <li>Feature 3</li>
-              </ul>
-            </div>
+          <div class="pricing-card-price">
+            <h4>$250</h4>
           </div>
-
-          <div class="pricing-card">
-            <div class="pricing-card-title">
-              <h3>Enterprise Site</h3>
-            </div>
-            <div class="pricing-card-price">
-              <h4>$TBD</h4>
-            </div>
-            <div class="pricing-card-features">
-              <ul>
-                <li>Feature 1</li>
-                <li>Feature 2</li>
-                <li>Feature 3</li>
-              </ul>
-            </div>
+          <div class="pricing-card-features">
+            <ul>
+              <li>Feature 1</li>
+              <li>Feature 2</li>
+              <li>Feature 3</li>
+            </ul>
           </div>
-
+          <div class="pricing-card-cta-container">
+            <button class="pricing-card-cta">
+              <p>Get Started</p>
+            </button>
+          </div>
         </div>
 
-        <img src="image_iphone_gold.webp" class="pricing-image" alt="mobile screenshot" />
+        <div class="pricing-card">
+          <div class="pricing-card-title">
+            <h3>Enterprise Site</h3>
+          </div>
+          <div class="pricing-card-price">
+            <h4>$TBD</h4>
+          </div>
+          <div class="pricing-card-features">
+            <ul>
+              <li>Feature 1</li>
+              <li>Feature 2</li>
+              <li>Feature 3</li>
+            </ul>
+          </div>
+          <div class="pricing-card-cta-container">
+            <button class="pricing-card-cta">
+              <p>Get Started</p>
+            </button>
+          </div>
+        </div>
 
-      </section>
-      <!-- <div class="github-widget" data-username="oaluna"></div> -->
+      </div>
+
+      <img src="image_iphone_gold.webp" class="pricing-image" alt="mobile screenshot" />
+      <img src="image_iphone.webp" class="pricing-image-silver" alt="mobile screenshot" />
+
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-header">
+        <h1 class="contact-title">Contact Me</h1>
+        </h1>
+        <h3 class="contact-subtitle">Fill out the form below to book a free 30-minute consultation regarding your
+          questions about your project's needs.</h3>
+      </div>
+      <div class="github-widget" data-username="oaluna"></div>
+      <div class="contact-form-container">
+
+          <form class="contact-form">
+            <label for="name" class="name-label" value="First and last name"></label>
+            <input type="text" class="name-input" id="name" placeholder="First, Last" />
+            <label for="email" class="email-label" value="Email address"></label>
+            <input type="email" class="email-input" id="email" placeholder="example@email.com" />
+            <label for="datetime" class="datetime-label"
+              value="Select a date and time you would like to receive your call"></label>
+            <input type="datetime-local" class="datetime-input" id="datetime" />
+            <label for="message" class="message-label"
+              value="Include any additional info you would like to share regarding your project."></label>
+            <input type="textarea" class="message-input" id="message" rows="4" cols="25"
+              value="Write additional details here." />
+          </form>
+        </div>
+
+    </section>
   </main>
   <script type="text/javascript" src="script.js">
   </script>
